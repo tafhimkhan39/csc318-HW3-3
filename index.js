@@ -106,7 +106,7 @@ function factorial(n) {
     }
 }
 
-function evaluateExpression(expression) {
+function evalExpression(expression) {
       expression = expression.replace(/x/g, '*').replace(/÷/g, '/');
       expression = expression.replace(/(-?\d+)([+\-*\/])(-?\d+)/g, (_, num1, operator, num2) => {
         num1 = parseFloat(num1);
